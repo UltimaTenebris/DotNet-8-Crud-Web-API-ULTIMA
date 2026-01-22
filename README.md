@@ -1,4 +1,23 @@
+# DevOps Task: Dockerized .NET 8 Web API on Azure
 
+This repository contains the solution for the "BeStrong" DevOps evaluation. It includes a Dockerized .NET 8 Web API, local development setup with Docker Compose, Azure Infrastructure as Code (Terraform), and a CI/CD pipeline definition.
+
+## Project Structure
+
+- **`/DotNetCrudWebApi`**: Source code for the .NET 8 Web API.
+- **`/terraform`**: Infrastructure as Code to provision Azure resources (ACR, App Service Plan, Web App).
+- **`Dockerfile`**: Multi-stage build configuration for the application.
+- **`docker-compose.yml`**: Configuration for running the service locally.
+- **`azure-pipelines.yml`**: CI/CD pipeline definition for Azure DevOps.
+
+## Getting Started (Local)
+
+To run this application locally, you need Docker Desktop installed.
+
+1. **Clone the repository:**
+   ```bash
+   git clone <YOUR_REPO_URL>
+   cd <YOUR_REPO_NAME>
 # DotNet Crud Web Api Example
 
  A RESTful Web API using ASP.NET Core in .NET 8.0 alongside Entity Framework Core. 
@@ -16,7 +35,7 @@ You can install the EF Core CLI tool globally using:
 ```bash
 dotnet tool install --global dotnet-ef
 ```
-
+---------------------------------------------------------
 ## Getting Started
 
 To get a local copy up and running follow these simple steps:
